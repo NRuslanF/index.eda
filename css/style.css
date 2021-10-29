@@ -39,6 +39,14 @@ body {
     padding: 13px 20px;
 }
 
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
 .search_button {
     background-color: transparent;
     border: none;
@@ -62,8 +70,8 @@ body {
 .login {
     background: #EBEBEB;
     border-radius: 50px;
-    padding: 16pcx 30px;
-    display: blok;
+    padding: 16px 30px;
+    display: block;
     text-decoration: none;
     font-size: 14px;
     line-height: 16px;
